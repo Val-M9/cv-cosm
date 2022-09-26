@@ -154,22 +154,24 @@ p {
   padding-top: 5px;
 }
 
-.contacts-item:first-child::before {
-  content: url('/assets/smartphone.svg');
+.contacts-item::before {
   position: relative;
   top: 6px;
+  width: 24px;
+  height: 24px;
+  color: #14848c;
+}
+
+.contacts-item:first-child::before {
+  content: url('/assets/smartphone.svg'); 
 }
 
 .contacts-item:nth-child(2)::before {
   content: url('/assets/mail.svg');
-  position: relative;
-  top: 6px;  
 }
 
 .contacts-item:nth-child(3)::before {
   content: url('/assets/github.svg');
-  position: relative;
-  top: 6px;
 }
 
 .link {
