@@ -163,15 +163,15 @@ p {
 }
 
 .contacts-item:first-child::before {
-  content: url('/assets/smartphone.svg'); 
+  content: url('./assets/smartphone.svg'); 
 }
 
 .contacts-item:nth-child(2)::before {
-  content: url('/assets/mail.svg');
+  content: url('./assets/mail.svg');
 }
 
 .contacts-item:nth-child(3)::before {
-  content: url('/assets/github.svg');
+  content: url('./assets/github.svg');
 }
 
 .link {
