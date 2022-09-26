@@ -1,0 +1,198 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  padding: 40px;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li {
+  margin: 0;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+p {
+  line-height: 1.74;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 50px -8px rgba(176,175,186,1);
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  height: 200px;
+}
+
+.photo {
+  height: 200px;
+  width: 200px;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+  padding-left: 30px;
+  width: 790px;
+  background: linear-gradient(to right, #14848c, #22c1cc);
+  color: #ffffff;
+}
+
+.name {
+  flex-wrap: wrap;
+  align-items: center;
+  width: 300px;
+  font-weight: 800;
+  font-size: 42px;
+}
+
+.occupation {
+  padding-top: 15px;
+  font-size: 20px;
+  font-weight: 500px;
+}
+
+.main {
+  display: flex;
+  margin: 70px 40px 40px 55px;
+}
+
+.info {
+  width: 700px;
+  margin-right: 20px;
+}
+
+.info-section {
+  padding-bottom: 40px;
+}
+
+.title {
+  padding-bottom: 10px;
+  font-weight: 600;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.subtitle {
+  padding-top: 15px;
+  padding-bottom: 10px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.accent {
+  color: #0c8992;
+}
+
+.time, 
+.description {
+  padding-bottom: 5px;
+}
+
+.job-item,
+.description {
+  color: #4b4b4b;
+}
+
+.time {
+  color: #828282;
+}
+
+.details {
+  width: 300px;
+  margin-left: 10px;
+  padding-left: 20px;
+  border-left: 1px solid #d5d5d5;
+}
+
+.details-title {
+  font-size: 22px;
+  padding-bottom: 10px;
+}
+
+.contacts-list,
+.skills-list {
+  padding: 0;
+  padding-bottom: 45px;
+  list-style: none;
+}
+
+.contacts-item {
+  padding-top: 5px;
+}
+
+.contacts-item:first-child::before {
+  content: url('/assets/smartphone.svg');
+  position: relative;
+  top: 6px;
+}
+
+.contacts-item:nth-child(2)::before {
+  content: url('/assets/mail.svg');
+  position: relative;
+  top: 6px;  
+}
+
+.contacts-item:nth-child(3)::before {
+  content: url('/assets/github.svg');
+  position: relative;
+  top: 6px;
+}
+
+.link {
+  text-decoration: none;
+  color: #4b4b4b;
+  margin-left: 10px;
+  align-self: flex-start;
+}
+
+.link:hover {
+  color: #0c8992;
+}
+
+.skills-item {
+  padding: 5px 15px;
+  color: #4b4b4b;
+  text-indent: -15px;
+
+}
+
+.skills-item::before {
+  content: "\2022";
+  margin-right: 8px;
+  color: #14848c;
+  font-size: 18px;
+}
