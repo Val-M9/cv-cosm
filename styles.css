@@ -65,9 +65,9 @@ p {
   flex-direction: column;
   justify-content: center;
   margin-left: 10px;
-  padding-left: 30px;
+  padding-left: 40px;
   width: 790px;
-  background: linear-gradient(to right, #14848c, #22c1cc);
+  background-color: #1c283e;
   color: #ffffff;
 }
 
@@ -76,7 +76,7 @@ p {
   align-items: center;
   width: 300px;
   font-weight: 800;
-  font-size: 42px;
+  font-size: 38px;
 }
 
 .occupation {
@@ -100,25 +100,29 @@ p {
 }
 
 .title {
-  padding-bottom: 10px;
+  padding-bottom: 2px;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 30px;
   font-weight: 600;
 }
 
 .subtitle {
   padding-top: 15px;
-  padding-bottom: 10px;
+  padding-bottom: 2px;
   font-size: 22px;
   font-weight: 600;
 }
 
-.accent {
-  color: #0c8992;
+.title + .subtitle {
+  padding-top: 10px;
 }
 
-.time, 
-.description {
+.accent {
+  color: #14848c;
+}
+
+.description
+.profile-description {
   padding-bottom: 5px;
 }
 
@@ -127,8 +131,13 @@ p {
   color: #4b4b4b;
 }
 
+.description {
+  padding-left: 15px;
+}
+
 .time {
   color: #828282;
+  font-size: 16px;
 }
 
 .details {
@@ -182,7 +191,7 @@ p {
 }
 
 .link:hover {
-  color: #0c8992;
+  color: #14848c;
 }
 
 .skills-item {
