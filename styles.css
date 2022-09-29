@@ -42,57 +42,103 @@ p {
 
 .wrapper {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 1000px;
   margin: 0 auto;
   background-color: #ffffff;
   box-shadow: 0px 0px 50px -8px rgba(176,175,186,1);
 }
 
-.header {
-  display: flex;
-  flex-direction: row;
-  height: 200px;
+.aside {
+  width: 300px;
+  background-color: #1c283e;
 }
 
 .photo {
-  height: 200px;
-  width: 200px;
+  width: 300px;
+  height: max-content;
 }
 
-.heading {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: 10px;
-  padding-left: 40px;
-  width: 790px;
-  background-color: #1c283e;
+.details {
+  padding-top: 80px;
+  padding-left: 30px;
   color: #ffffff;
 }
 
-.name {
-  flex-wrap: wrap;
-  align-items: center;
-  width: 300px;
-  font-weight: 800;
-  font-size: 38px;
+.details-title {
+  font-size: 22px;
+  padding-bottom: 10px;
 }
 
-.occupation {
-  padding-top: 15px;
-  font-size: 20px;
-  font-weight: 500px;
+.contacts-list,
+.skills-list {
+  padding: 0;
+  padding-bottom: 45px;
+  list-style: none;
+}
+
+.contacts-item {
+  padding-top: 5px;
+}
+
+.contacts-item::before {
+  position: relative;
+  top: 6px;
+  width: 24px;
+  height: 24px;
+  color: #f4892b;
+}
+
+.contacts-item:first-child::before {
+  content: url('./assets/smartphone.svg'); 
+}
+
+.contacts-item:nth-child(2)::before {
+  content: url('./assets/mail.svg');
+}
+
+.contacts-item:nth-child(3)::before {
+  content: url('./assets/github.svg');
+}
+
+.link {
+  text-decoration: none;
+  margin-left: 10px;
+  align-self: flex-start;
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+.link:hover {
+  color: #f4892b;
+}
+
+.skills-item {
+  padding: 5px 15px;
+  text-indent: -15px;
+}
+
+.skills-item::before {
+  content: "\2022";
+  margin-right: 8px;
+  color: #f4892b;
+  font-size: 18px;
 }
 
 .main {
   display: flex;
-  margin: 70px 40px 40px 55px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 70px 40px 40px 70px;
+  width: 700px;
+}
+
+.name {
+  font-size: 38px;
 }
 
 .info {
-  width: 700px;
-  margin-right: 20px;
+  margin-top: 60px;
 }
 
 .info-section {
@@ -131,6 +177,10 @@ p {
   color: #4b4b4b;
 }
 
+.job-item {
+  padding-top: 10px;
+}
+
 .description {
   padding-left: 15px;
 }
@@ -138,72 +188,4 @@ p {
 .time {
   color: #828282;
   font-size: 16px;
-}
-
-.details {
-  width: 300px;
-  margin-left: 10px;
-  padding-left: 20px;
-  border-left: 1px solid #d5d5d5;
-}
-
-.details-title {
-  font-size: 22px;
-  padding-bottom: 10px;
-}
-
-.contacts-list,
-.skills-list {
-  padding: 0;
-  padding-bottom: 45px;
-  list-style: none;
-}
-
-.contacts-item {
-  padding-top: 5px;
-}
-
-.contacts-item::before {
-  position: relative;
-  top: 6px;
-  width: 24px;
-  height: 24px;
-  color: #14848c;
-}
-
-.contacts-item:first-child::before {
-  content: url('./assets/smartphone.svg'); 
-}
-
-.contacts-item:nth-child(2)::before {
-  content: url('./assets/mail.svg');
-}
-
-.contacts-item:nth-child(3)::before {
-  content: url('./assets/github.svg');
-}
-
-.link {
-  text-decoration: none;
-  color: #4b4b4b;
-  margin-left: 10px;
-  align-self: flex-start;
-}
-
-.link:hover {
-  color: #14848c;
-}
-
-.skills-item {
-  padding: 5px 15px;
-  color: #4b4b4b;
-  text-indent: -15px;
-
-}
-
-.skills-item::before {
-  content: "\2022";
-  margin-right: 8px;
-  color: #14848c;
-  font-size: 18px;
 }
