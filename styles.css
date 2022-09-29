@@ -56,7 +56,7 @@ p {
 
 .photo {
   width: 300px;
-  height: max-content;
+  height: fit-content;
 }
 
 .details {
